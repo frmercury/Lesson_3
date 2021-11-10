@@ -13,5 +13,6 @@ public class DiscountCounter {
         } else {
             System.out.println("You don't have a discount");
         }
+
     }
 }
