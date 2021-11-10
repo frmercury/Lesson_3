@@ -8,7 +8,10 @@ public class DiscountCounter {
         System.out.println("Enter your purchase price:");
         double purchaseAmount = scanner.nextDouble();
 
-        String result = purchaseAmount > 1000 ? "Total price " + String.valueOf(purchaseAmount*0.85) : "You don't have a discount";
-        System.out.println(result);
+        if (purchaseAmount > 1000) {
+            System.out.println("Total price " + purchaseAmount*0.85 + "$");
+        } else {
+            System.out.println("You don't have a discount");
+        }
     }
 }
