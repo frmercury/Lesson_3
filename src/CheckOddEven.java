@@ -7,7 +7,11 @@ public class CheckOddEven {
         System.out.println("Enter the value:");
         int number = scanner.nextInt();
 
-        String result = (number % 2 !=0 ) ? "Odd number" : "Even Number";
-        System.out.println(result);
+        if (number % 2 !=0 ) {
+            System.out.println("Odd number");
+        } else {
+            System.out.println("Even Number");
+        }
+        System.out.println("BYE");
     }
 }

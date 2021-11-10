@@ -8,7 +8,11 @@ public class CheckPassFail {
         System.out.println("Enter the value:");
         int mark = scanner.nextInt();
 
-        String result = (mark >= 50) ? "PASS" : "FAIL";
-        System.out.println(result);
+        if (mark>=50) {
+            System.out.println("PASS");
+        } else {
+            System.out.println("FAIL");
+        }
+        System.out.println("DONE");
     }
 }
